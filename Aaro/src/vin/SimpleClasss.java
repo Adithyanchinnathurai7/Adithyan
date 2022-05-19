@@ -58,8 +58,8 @@ public class SimpleClasss
 			void hot()
 			{
 				int i=8,j=3;//assingt value
-				int e=i+j;//g is inizial and logic it is knowlaged
-				System.out.println(e);
+				int w=i+j;//g is inizial and logic it is knowlaged
+				System.out.println(w);
 			}
 		}
 
