@@ -31,6 +31,7 @@ public class InterfcTpy3rtns
 		{
 			return i+":"+str;
 		}; val= rumLambda.met(15,"lambda");
+		
 		System.out.println("value"+val);
 		
 		//normal

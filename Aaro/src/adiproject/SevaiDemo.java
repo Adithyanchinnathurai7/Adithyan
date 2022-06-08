@@ -1,4 +1,4 @@
-package ajithproject;
+package adiproject;
 
 public class SevaiDemo {
 

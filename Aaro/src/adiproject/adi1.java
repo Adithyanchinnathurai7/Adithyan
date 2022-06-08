@@ -1,6 +1,6 @@
-package ajithproject;
+package adiproject;
 
-public class Ajith {
+public class adi1 {
 
 	//int i = 20;
 	
@@ -16,7 +16,7 @@ public class Ajith {
 	
 	
 	public static void main(String[] args) {
-		Ajith obj = new Ajith ();
+		adi1 obj = new adi1 ();
 		obj.time(2);
     //System.out.println(obj.i);
 	}

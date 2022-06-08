@@ -8,7 +8,7 @@ public class Dowhile
 		int x=1;
 		do
 		{
-			System.out.print("enter x value "+x);
+			System.out.print("enter x value a"+x);
 			x++;
 			System.out.print("\n");
 			

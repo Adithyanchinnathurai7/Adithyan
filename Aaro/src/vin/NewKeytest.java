@@ -16,12 +16,12 @@ public class NewKeytest
 			//this keyword cannot be used inside a static method
 			NewKeytest obj=new NewKeytest("some");
 //			obj.NewKeytest("some value...");
-			obj.printS("aaaaaaaaaa","bbbbbb");
+			obj.printS("aaaaaaaaaa");
 		}
 		
-		 public void printS(String s,String y) 
+		 public void printS(String s) 
 		{
-			System.out.println(y);
+			System.out.println(s);
 			System.out.println(this.s);
 			
 		}

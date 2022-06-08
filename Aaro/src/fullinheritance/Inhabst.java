@@ -5,10 +5,10 @@ public class Inhabst
 
 	public static void main(String[] args)
 	{
-		Sakthiplug indianPlug=new Sakthiplug();
+		Samplug indianPlug=new Samplug();
 		AmericanPlug americanplug=new lenovaPlug();
 		
-		Sakthisocket indiansocket=new Sakthisocket();
+		Samsocket indiansocket=new Samsocket();
 		indianAdapter adapter=new indianAdapter(americanplug);
 		indiansocket.roundpinHole(adapter);
 	}
@@ -34,14 +34,14 @@ public class Inhabst
 		public abstract void slabpinHole(AmericanPlug ap);
 		
 	}
-	class Sakthiplug extends IndianPlug
+	class Samplug extends IndianPlug
 	{
 		public void roundpin()
 		{
 			System.out.println("sakthi plug working");
 		}
 	}
-	class Sakthisocket extends IndianSocket
+	class Samsocket extends IndianSocket
 	{
 		public void roundpinHole(IndianPlug ip)
 		{
