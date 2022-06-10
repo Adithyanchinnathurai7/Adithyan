@@ -20,9 +20,10 @@ public class Gorbagetest3
 		System.out.println("Free Memory..:"+r.freeMemory());
 		System.out.println(tatha.getGold());
 		tatha=null;
-		//System.out.println(tatha.getGold());
-		//System.out.println("After tathas death..:"+r.freeMemory());;
-		//System.out.println("tatha kariyam starts....");
+		
+		System.out.println("After tathas death..:"+r.freeMemory());;
+		System.out.println("tatha kariyam starts....");
+		System.out.println(tatha.getGold());
 		//r.gc();
 		//System.out.println("After tathas kariyam...:"+r.freeMemory());
 	}
@@ -40,16 +41,15 @@ class GrandFather
 		}
 		
 	}
-	public char[] getGold() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-}
-	/*protected String getGold() {
+	
+
+	protected String getGold()
+	{
 		return "The Gold is...:"+gold;
 	}
 	@Override
-	protected void finalize() throws Throwable {
+	protected void finalize() throws Throwable
+	{
 		System.out.println(getGold());
 	}
-}*/
+}
