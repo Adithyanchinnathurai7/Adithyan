@@ -40,6 +40,10 @@ class GrandFather
 		}
 		
 	}
+	public char[] getGold() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 	/*protected String getGold() {
 		return "The Gold is...:"+gold;
