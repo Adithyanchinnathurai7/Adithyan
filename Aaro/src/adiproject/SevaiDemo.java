@@ -45,7 +45,7 @@ public class SevaiDemo {
 			this.command[slot]=command;
 		}
 		public void executeCommand(int slot) {
-			command[slot].execute();
+
 		}
 	}
 	interface Command{

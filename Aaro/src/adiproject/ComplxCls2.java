@@ -6,10 +6,10 @@ public class ComplxCls2
 	public static void main(String[] args) 
 	{
 		
-	Vikram vk=new Vikram();
+	Vcik vk=new Vcik();
 	vk.ticket=150;
 	
-	Don don=new Don();
+	Ton don=new Ton();
 	don.movie(vk);
 	
 	System.out.println("value ...:"+vk.ticket);
@@ -19,12 +19,12 @@ public class ComplxCls2
 
 
 
-class Vikram{
+class Vcik{
 	int ticket;
 }
 
-class Don{
-	public Vikram movie(Vikram vikram) {
+class Ton{
+	public Vcik movie(Vcik vikram) {
 		
 		vikram.ticket=vikram.ticket+30;
 		
