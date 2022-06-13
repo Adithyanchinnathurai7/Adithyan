@@ -1,4 +1,4 @@
-package adiproject;
+package fullinheritance;
 
 public class InterfcTest 
 {
