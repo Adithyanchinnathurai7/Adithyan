@@ -12,18 +12,19 @@ public class Gorbagetest3
 		System.out.println("Free Memory..:"+r.freeMemory());
 		
 		r.gc();
-		
 		System.out.println("Free Memory..:"+r.freeMemory());
 		
-		GrandFather tatha=new GrandFather();
-		
-		System.out.println("Free Memory..:"+r.freeMemory());
-		System.out.println(tatha.getGold());
-		tatha=null;
-		
-		System.out.println("After tathas death..:"+r.freeMemory());;
-		System.out.println("tatha kariyam starts....");
-		System.out.println(tatha.getGold());
+//		System.out.println("Free Memory..:"+r.freeMemory());
+//		
+//		GrandFather tatha=new GrandFather();
+//		
+//		System.out.println("Free Memory..:"+r.freeMemory());
+//		System.out.println(tatha.getGold());
+//		tatha=null;
+//		
+//		System.out.println("After tathas death..:"+r.freeMemory());;
+//		System.out.println("tatha kariyam starts....");
+//		System.out.println(tatha.getGold());
 		//r.gc();
 		//System.out.println("After tathas kariyam...:"+r.freeMemory());
 	}
