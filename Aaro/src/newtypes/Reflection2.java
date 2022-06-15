@@ -22,7 +22,7 @@ public class Reflection2
 		Class c=demo.getClass();
 		Method m=c.getDeclaredMethod("met",String.class,Employee.class);
 		
-		m.setAccessible(false);
+		m.setAccessible(true);
 		System.out.println(m);
 		m.invoke(demo,"hello",new Employee());
 		
