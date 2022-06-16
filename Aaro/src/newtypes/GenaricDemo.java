@@ -5,7 +5,7 @@ public class GenaricDemo
 
 	public static void main(String[] args) 
 	{
-		GoodPaintBrush<Air> gno=new GoodPaintBrush<>();
+		GoodPaintBrush gno=new GoodPaintBrush();
 		Water water=new Water();
 		Air air=new Air();
 		//gno.setObj(water);
@@ -13,9 +13,9 @@ public class GenaricDemo
 		
 		//water=(Water)gno.getObj();
 		//air=(Air)gno.getObj();
-		air.dusting();
+	//	air.dusting();
 		//water.sprinkle();
-		
+		//System.out.println(gno.getObj());
 	}
 
 }
