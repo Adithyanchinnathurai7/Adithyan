@@ -23,7 +23,7 @@ public class Collection
 		System.out.println("Original size..:"+list.size());
 		list.add("vikram");
 		System.out.println("modified...add..:"+list.size());
-		list.remove(1);
+		list.remove(2);
 		System.out.println("modified..remove..:"+list.size());
 		
 		System.out.println(list.get(1));
