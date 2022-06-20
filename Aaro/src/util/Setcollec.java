@@ -1,5 +1,6 @@
 package util;
 import java.util.*;
+import java.util.function.Consumer;
 //import java.util.HashSet;
 //import java.util.Iterator;
 //import java.util.Set;
@@ -16,7 +17,9 @@ public class Setcollec
 		st.add("dongli");
 		st.add("daamu");
 //		
-//		System.out.println(st);
+		//System.out.println(st);
+	}
+}
 //		
 //		st.remove("bodhidmr");
 //		
@@ -37,23 +40,25 @@ public class Setcollec
 		//st.forEach(System.out::println);
 		//st.forEach(Setcollec::print);
 		
-		Iterator<String> it=st.iterator();
-		while(it.hasNext()) {
-			System.out.println(it.next());
-		}
-	}
-	
-	static void print(String s) {
-		System.out.println(s);
-	}
-		
-
-}
-//class MyConsum implements Consumer<String>
-//{
-//	@Override
-//	public void accept(String t) {
-//		System.out.println(t);
-//		
+//		Iterator<String> it=st.iterator();
+//		while(it.hasNext()) {
+//			System.out.println(it.next());
+//		}
 //	}
+//	
+//	static void print(String s) {
+//		System.out.println(s);
+//	}
+//		
+
+//}
+class MyConsum implements Consumer<String>
+{
+	@Override
+	public void accept(String t) 
+	{
+		System.out.println(t);
+		
+	}
+}
 //}
