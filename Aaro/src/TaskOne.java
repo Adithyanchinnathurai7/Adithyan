@@ -26,7 +26,7 @@ public class TaskOne {
 	        LocalDateTime dtn=new LocalDateTime new ();
 	        
 	        Date dNow = new Date( );
-	       // SimpleDateFormat ft = new SimpleDateFormat ("E yyyy.MM.dd :");
+	        SimpleDateFormat ft = new SimpleDateFormat ("E yyyy.MM.dd :");
 
 	        SimpleDateFormat 
 	        System.out.println("Current Date: " + ft.format(dNow));

@@ -12,26 +12,34 @@ public class JDBCDemo6
 	public static void main(String[] args) throws Exception 
 	{
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/qic","root","Root");
+		Connection co=DriverManager.getConnection("jdbc:mysql://localhost:3306/qic","root","Root");
 		
-		System.out.println(con);
+		System.out.println(co);
 		
-		String sql="select * from users where uname=?";
-		PreparedStatement sttm=con.prepareStatement(sql);
+		String sql="select*from users where uname=?";
+		PreparedStatement stat=co.prepareStatement(sql);
+		while(true)
+		{
+		stat.setString(1,"adi");
+		//stat.setString(2,"aji");
 		
-		sttm.setString(1, "abi");
-		ResultSet rs =sttm.executeQuery();
+		ResultSet rs=stat.executeQuery();
 		
-		ResultSetMetaData rsm=rs.getMetaData();
-		int colcount=rsm.getColumnCount();
-		for(int i=1;i<=colcount;i++) {
-			System.out.print(rsm.getColumnName(i)+"\t");
+		ResultSetMetaData rsmd=rs.getMetaData();
+		int cocount=rsmd.getColumnCount();
+		
+		for(int i=1;i<=cocount;i++)
+		{
+			System.out.print(rsmd.getColumnName(i)+"\t");
 		}
-		System.out.println("\n=====================================================\n");
-		if(rs.next()) {
-			for(int i=1;i<=colcount;i++) {
+		System.out.println();
+		if(rs.next())
+		{
+			for(int i=1;i<=cocount;i++)
+			{
 				System.out.print(rs.getString(i)+"\t");
 			}
 		}
+		}		
 	}
 }
