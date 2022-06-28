@@ -22,7 +22,7 @@ public class Urlcon
 		}
 		
 		try (BufferedReader f1=new BufferedReader(new InputStreamReader(urlcon.getInputStream()));
-				FileWriter f2=new FileWriter("newfile.html");)
+				FileWriter f2=new FileWriter("newfile1.html");)
 		{
 			char[] b=new char[128];
 			int bytesread=0;
