@@ -7,6 +7,7 @@ public class UserDTO
 	private int amt;
 	private String city;
 	private int flag;
+	
 	public int getVid() {
 		return vid;
 	}

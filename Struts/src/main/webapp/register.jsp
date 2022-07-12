@@ -10,7 +10,7 @@
 	<input type="hidden" name="action" value="login">
 	UserName:<input type="text" name="uname">
 	UserPass:<input type="secret" name="upass">
-	<input type="submit" value="Register..">
+	<input type="submit" value="Register">
 	</form>
 </body>
 </html>

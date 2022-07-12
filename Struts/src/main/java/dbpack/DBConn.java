@@ -144,9 +144,12 @@ public class DBConn
 			public static void main(String[] args)
 			{
 				DBConn dbconn=new DBConn();
-				//System.out.println(dbconn.checkUser("aji","secret"));
+				
+				System.out.println(dbconn.checkUser("aji","secret"));
 				System.out.println(dbconn.updateFlag("aji",0));
-				//System.out.println(dbconn.checkFlag("aji"));
+				System.out.println(dbconn.checkFlag("aji"));
+				
+				
 			}
 	
 }

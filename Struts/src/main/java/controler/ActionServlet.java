@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 @WebServlet("*.do")
@@ -26,6 +27,16 @@ public class ActionServlet extends HttpServlet
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		rp.Process(request, response);
+		HttpSession session = request.getSession();
+		
+		session.setMaxInactiveInterval(30);
+	}
+		@Override
+		public void destroy() {
+			
+			System.out.println("Old deleted.............");
+			
 		
 	}
 

@@ -6,14 +6,12 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-
-<body bgcolor="blue">
-<hr>
-<jsp:include page="logout.jsp"/>
-<hr>
-<hr>
-<jsp:include page="SportsShoop.jsp"/>
-<hr>
-	<h1> Welcome budies....</h1>
+<body>
+<center>
+	<form method="post" action="logout.do">
+	<input type="hidden" name="action" value="logout">
+	<input type="submit" value="logout">
+	</form>
+	</center>
 </body>
 </html>
