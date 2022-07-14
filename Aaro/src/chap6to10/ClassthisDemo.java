@@ -21,6 +21,6 @@ class Ball {
 
 	public Bat met(Bat b) {
 		this.aaa = b;
-		return this;
+		return b;
 	}
 }
