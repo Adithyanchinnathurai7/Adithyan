@@ -7,8 +7,11 @@ public class Bridge {
 		Shape pent = new Pentagon(new GreenColor());
 		pent.applyColor();
 		
-//		Shape tri = new Triangle(new RedColor());
-//		tri.applyColor();
+		Shape tri = new Triangle(new RedColor());
+		tri.applyColor();
+		
+		Shape rec = new Rectangle(new BlueColor());
+		rec.applyColor();
 
 	}
 }
@@ -21,14 +24,21 @@ class GreenColor implements Color
 	}
 }
 
-//class RedColor implements Color 
-//{
-//	public void applyColor() 
-//	{
-//		System.out.println("red.");
-//	}
-//}
+class RedColor implements Color 
+{
+	public void applyColor() 
+	{
+		System.out.println("red.");
+	}
+}
 
+class BlueColor implements Color 
+{
+	public void applyColor() 
+	{
+		System.out.println("blue");
+	}
+}
 interface Color 
 {
 	public void applyColor();
@@ -64,17 +74,32 @@ class Pentagon extends Shape
 	}
 }
 
-//class Triangle extends Shape 
-//{
-//	public Triangle(Color c) 
-//	{
-//		super(c);
-//	}
-//
-//	@Override
-//	public void applyColor() 
-//	{
-//		System.out.print("Triangle filled with color ");
-//		color.applyColor();
-//	}
-//}
+class Triangle extends Shape 
+{
+	public Triangle(Color c) 
+	{
+		super(c);
+	}
+
+	@Override
+	public void applyColor() 
+	{
+		System.out.print("Triangle filled with color ");
+		color.applyColor();
+	}
+}
+
+class Rectangle extends Shape 
+{
+	public Rectangle(Color c) 
+	{
+		super(c);
+	}
+
+	@Override
+	public void applyColor() 
+	{
+		System.out.print("Rect filled with color ");
+		color.applyColor();
+	}
+}

@@ -10,10 +10,10 @@ public class Visitor {
 	}
 
 	private static int calculatePrice(ItemElement[] items) {
-		ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+		ShoppingCartVisitor visitor12 = new ShoppingCartVisitorImpl();
 		int sum = 0;
 		for (ItemElement item : items) {
-			sum = sum + item.accept(visitor);
+			sum = sum + item.accept(visitor12);
 		}
 		return sum;
 	}
@@ -42,12 +42,16 @@ class ShoppingCartVisitorImpl implements ShoppingCartVisitor {
 		System.out.println(fruit.getName() + " cost = " + cost);
 		return cost;
 	}
+	
+		
 }
 
 interface ShoppingCartVisitor {
 	int visit(Book book);
 
 	int visit(Fruit fruit);
+	
+	
 }
 
 class Fruit implements ItemElement {
@@ -102,3 +106,4 @@ class Book implements ItemElement {
 		return visitor.visit(this);
 	}
 }
+
