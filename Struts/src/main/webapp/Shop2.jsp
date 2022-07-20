@@ -9,7 +9,7 @@
 <jsp:include page="logout.jsp"/>
 <hr>
 </head>
-<body bgcolor="yello"><center>
+<body bgcolor="yellow"><center>
 <h1>Shop2 Shop</h1>
 <form action="purchase.do" method="post">
 <input type="hidden" name="action" value="purchase">

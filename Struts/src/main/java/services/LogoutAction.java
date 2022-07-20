@@ -14,13 +14,13 @@ public class LogoutAction extends Action{
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		
-		String name=request.getSession().getAttribute("uname").toString();
+		String uname=request.getSession().getAttribute("uname").toString();
 		
 		DBConn con=new DBConn();
 		
-		boolean a=con.updateFlag(name, 0);
+		boolean don=con.updateFlag(uname, 0);
 		
-		if(a) {
+		if(don) {
 			
 			return "logout.Success";
 			

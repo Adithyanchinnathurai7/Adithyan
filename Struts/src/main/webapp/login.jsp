@@ -4,7 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<
+
 <body bgcolor="lightblue">
 <center>
 	<form method="post" action="login.do">

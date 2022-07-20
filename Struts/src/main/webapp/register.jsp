@@ -6,10 +6,10 @@
 </head>
 <body bgcolor="red">
 	<center>
-	<form method="post" action="login.do">
-	<input type="hidden" name="action" value="login">
+	<form method="post" action="register.do">
+	<input type="hidden" name="action" value="register">
 	UserName:<input type="text" name="uname">
-	UserPass:<input type="secret" name="upass">
+	UserPass:<input type="text" name="upass">
 	<input type="submit" value="Register">
 	</form>
 </body>

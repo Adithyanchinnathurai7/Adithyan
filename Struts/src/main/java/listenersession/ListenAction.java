@@ -1,4 +1,4 @@
-package listener;
+package listenersession;
 
 import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSession;
@@ -10,7 +10,7 @@ import dbpack.DBConn;
 public class ListenAction implements HttpSessionListener {
     public void sessionCreated(HttpSessionEvent se)  {
     	
-         System.out.println("sessioncreated........");
+         System.out.println("Session Created........");
     }
     public void sessionDestroyed(HttpSessionEvent se)  {
     	DBConn db=new DBConn();
@@ -26,7 +26,7 @@ public class ListenAction implements HttpSessionListener {
     	db.updateFlag(name, 0);
     	
     	}
-        System.out.println("session deleted");
+        System.out.println("Session deleted");
     }
 	
 }
