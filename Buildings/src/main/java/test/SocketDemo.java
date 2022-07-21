@@ -11,7 +11,8 @@ public class SocketDemo
 		
 			new Server();
 	}
-
+//Socket and ServerSocket classes are used for connection-oriented socket programming , 
+//DatagramSocket and DatagramPacket classes are used for connection-less socket programming.
 }
 class Server
 {
@@ -21,7 +22,7 @@ class Server
 	{
 		try
 		{
-			server=new ServerSocket(2000);
+			server=new ServerSocket(3000);
 			System.out.println("Server ready to accepted");
 			client=server.accept();
 			
@@ -44,7 +45,7 @@ class Client
 	{
 		try
 		{
-			client=new Socket("localhost",2000);
+			client=new Socket("localhost",3000);
 			
 			
 		} 
