@@ -21,7 +21,7 @@ class Server
 	{
 		try
 		{
-			server=new ServerSocket(4000);
+			server=new ServerSocket(2000);
 			System.out.println("Server ready to accepted");
 			client=server.accept();
 			
@@ -31,8 +31,29 @@ class Server
 			e.printStackTrace();
 		}
 	}
+	public static void main(String[] args) {
+		new Server();
+	}
 }
 class Client
 {
+
 	
+	Socket client;
+	public Client() 
+	{
+		try
+		{
+			client=new Socket("localhost",2000);
+			
+			
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		new Client();
+	}
 }
