@@ -1,5 +1,9 @@
 package test;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -22,10 +26,28 @@ class Server
 	{
 		try
 		{
-			server=new ServerSocket(3000);
+			server=new ServerSocket(4000);
+			while(true) {
 			System.out.println("Server ready to accepted");
-			client=server.accept();
+			client=server.accept();			
+			System.out.println(client);
 			
+			
+			PrintStream out=new PrintStream(client.getOutputStream(),true);		
+			BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("please enter a msg to client..:");
+			String msgtoclnt=in.readLine();	
+			
+				
+			out.println(msgtoclnt);
+			
+			BufferedReader bis=new BufferedReader(new InputStreamReader(client.getInputStream()));
+			String msgfrmclnt=bis.readLine();
+			System.out.println("msg frm Client  :"+msgfrmclnt);
+			
+			
+		
+			}
 		} 
 		catch (Exception e) 
 		{
@@ -45,9 +67,20 @@ class Client
 	{
 		try
 		{
-			client=new Socket("localhost",3000);
 			
+			client=new Socket("localhost",4000);
+			while(true) {
+			BufferedReader bis=new BufferedReader(new InputStreamReader(client.getInputStream()));
+			String msgfrmsvr=bis.readLine();
+			System.out.println("msg frm server  :"+msgfrmsvr);
 			
+			BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("please enter a msg to Server..:");
+			String msgtosrvr=in.readLine();
+			
+			PrintStream out=new PrintStream(client.getOutputStream(),true);
+			out.print(msgtosrvr);
+			}
 		} 
 		catch (Exception e) 
 		{
