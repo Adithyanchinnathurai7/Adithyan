@@ -1,0 +1,6 @@
+INFO    2022-04-29 14:47:46,144 [main] Dempt.Rooms  - this is a message....:welcome to sonar
+WARN    2022-04-29 14:47:46,145 [main] Dempt.Rooms  - warning message...:welcome to sonar
+ERROR   2022-04-29 14:47:46,146 [main] Dempt.Rooms  - error message....:welcome to sonar
+INFO    2022-04-29 14:48:06,595 [main] Dempt.Rooms  - this is a message....:welcome to sonar
+WARN    2022-04-29 14:48:06,596 [main] Dempt.Rooms  - warning message...:welcome to sonar
+ERROR   2022-04-29 14:48:06,596 [main] Dempt.Rooms  - error message....:welcome to sonar
