@@ -32,12 +32,6 @@ public class ActionServlet extends HttpServlet
 		
 		session.setMaxInactiveInterval(30);
 	}
-		@Override
-		public void destroy() {
-			
-			System.out.println("Old deleted.............");
-			
 		
-	}
 
 }

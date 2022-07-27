@@ -2,17 +2,17 @@ package dtopack;
 
 public class UserDTO
 {
-	private int vid;
+	private int uid;
 	private String uname,upass;
 	private int amt;
 	private String city;
 	private int flag;
 	
-	public int getVid() {
-		return vid;
+	public int getUid() {
+		return uid;
 	}
-	public void setVid(int vid) {
-		this.vid = vid;
+	public void setUid(int uid) {
+		this.uid = uid;
 	}
 	public String getUname() {
 		return uname;

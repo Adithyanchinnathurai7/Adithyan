@@ -1,5 +1,7 @@
 package dbpack;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -116,12 +118,12 @@ public class DBConn
 			{
 				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/anoud","root","Root");
 				PreparedStatement ps=con.prepareStatement("insert into users values(?,?,?,?,?,?)");
-				ps.setInt(1, user.getVid());
+				ps.setInt(1, user.getUid());
 				ps.setString(2,user.getUname());
 				ps.setString(3,user.getUpass());
 				ps.setInt(4, user.getAmt());
 				ps.setString(5,user.getCity());
-				ps.setInt(6, user.getFlag());
+				ps.setInt(6, 0);
 				int i=ps.executeUpdate();
 				if(i>0)
 				{
@@ -140,6 +142,11 @@ public class DBConn
 				return false;
 			}
 		}
+		
+		
+		
+		  
+		
 			
 			public static void main(String[] args)
 			{
