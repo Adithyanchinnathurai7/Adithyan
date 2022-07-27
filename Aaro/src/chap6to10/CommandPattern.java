@@ -20,13 +20,15 @@ class UniversalRemote {
 		MotherOldMovieCommand momc = new MotherOldMovieCommand(tv, setTopBox, soundSystem, netFlix);
 
 		Remote universalRemote = new Remote();
-		universalRemote.executeCommand(1);
-		universalRemote.setCommand(fncc, 4);
-		universalRemote.setCommand(momc, 3);
-		universalRemote.setCommand(msc, 2);
-
+		
+		universalRemote.setCommand(fncc, 3);
+		universalRemote.setCommand(momc, 2);
+		universalRemote.setCommand(msc, 1);
+		universalRemote.setCommand(momc, 0);
+//		universalRemote.setCommand(msc, 5);
 		System.out.println("My Father wants to see news channell...");
-		universalRemote.executeCommand(3);
+		universalRemote.executeCommand(4);
+		
 
 	}
 }
@@ -64,6 +66,7 @@ class SoundSystem {
 }
 
 interface Command {
+	
 	public void execute();
 }
 
@@ -143,6 +146,7 @@ class DummyCommand implements Command {
 		System.out.println("I am a dummy button...");
 	}
 }
+
 
 class Remote {
 	Command command[] = new Command[5];
