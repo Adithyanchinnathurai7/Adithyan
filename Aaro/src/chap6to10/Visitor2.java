@@ -26,7 +26,7 @@ public class Visitor2 {
 		}
 		@Override
 		public void visit() {
-			// TODO Auto-generated method stub
+			
 			new Handler().handle(this);
 		}
 	}

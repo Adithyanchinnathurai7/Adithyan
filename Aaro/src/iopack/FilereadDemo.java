@@ -15,9 +15,9 @@ public class FilereadDemo
 		
 			
 			
-//			System.out.println(file.available());
-//		
-//			System.out.println(file.read());
+			//System.out.println(file.available());
+		
+			System.out.println(file.read());
 //			System.out.println(file.read());
 //			System.out.println(file.read());
 //			System.out.println(file.read());
@@ -34,7 +34,7 @@ public class FilereadDemo
 //			System.out.println((char)file.read());
 //			System.out.println((char)file.read());
 //			System.out.println((char)file.read());
-			
+//			
 //			int available=file.available();
 //			byte b[]=new byte[4];
 //		
@@ -44,17 +44,17 @@ public class FilereadDemo
 //			
 //			String s=new String(b,0,available);
 //			System.out.println(s);
-			
-
-			byte b[]=new byte[4];
-			int noofbytesread=0;
-			while((noofbytesread=file.read(b))!=-1)
-			{
-				System.out.println(noofbytesread);
-				String s=new String(b,0,noofbytesread);
-				System.out.println(s);
-		
-			}
+//			
+//
+//			byte b[]=new byte[4];
+//			int noofbytesread=0;
+//			while((noofbytesread=file.read(b))!=-1)
+//			{
+//				System.out.println(noofbytesread);
+//				String s=new String(b,0,noofbytesread);
+//				System.out.println(s);
+//		
+//			}
 		}
 			
 		catch (Exception e)
