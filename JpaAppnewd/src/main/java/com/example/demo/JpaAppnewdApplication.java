@@ -3,13 +3,11 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
-
-public class JpaAppDemoApplication {
+public class JpaAppnewdApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JpaAppDemoApplication.class, args);
+		SpringApplication.run(JpaAppnewdApplication.class, args);
 	}
 
 }

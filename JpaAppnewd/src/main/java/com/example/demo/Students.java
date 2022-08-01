@@ -4,11 +4,20 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Student {
+public class Students {
 	@Id
 	private int sid;
 	private String sname;
 	private int sage;
+	private String scity;
+	
+	
+	public String getScity() {
+		return scity;
+	}
+	public void setScity(String scity) {
+		this.scity = scity;
+	}
 	public int getSid() {
 		return sid;
 	}
