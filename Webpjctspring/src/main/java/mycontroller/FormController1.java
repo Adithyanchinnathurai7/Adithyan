@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping({"form1"})
+@RequestMapping({"/form1"})
 public class FormController1 {
 	@Autowired
 	MessageSource messageSource; 

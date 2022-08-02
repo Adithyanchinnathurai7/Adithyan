@@ -6,12 +6,11 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.context.annotation.SessionScope;
 
 @Controller
 
 @RequestMapping("/bs2")
-@SessionScope
+
 public class BasicController2 {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/helloo")
