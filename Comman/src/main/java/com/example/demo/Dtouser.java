@@ -2,16 +2,25 @@ package com.example.demo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 public class Dtouser {
 @Id
 private int userid;
+@Size(min=3,max=10)
 private String username;
 private int flag;
+@Digits(fraction = 2, integer = 6)
 private String password;
 private String image;
+@Email
 private String email;
+@Length(max=10)
 private Long phonenumber;
 private String city;
 private String address;

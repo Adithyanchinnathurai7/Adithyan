@@ -35,7 +35,7 @@ public class ServiceTest {
 	}
 	
 	
-	public int checkUid()
+	public int checkUid(Dtouser dtouser)
 	{
 		
 		List<Dtouser> a = getDaoRepository().checkUid();
@@ -47,7 +47,7 @@ public class ServiceTest {
 			b=sto.getFlag();
 		}
 		
-		return b+1;
+		return b;
 		
 	}
 	

@@ -1,3 +1,4 @@
+<body bgcolor="gray">
 <%@page import="java.util.Enumeration"%>
 <h1>  Welcome to invoice</h1>
 <% 
@@ -16,3 +17,4 @@ while(enu.hasMoreElements()){
 }
 
 %>
+</body>

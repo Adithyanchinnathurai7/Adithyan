@@ -1,3 +1,4 @@
+<body bgcolor="yellow"></body>
 <h1>Welcome to login</h1>
 <form action="/shopping/log" method="post" >
 UserName:<input type="text" name="username"  >

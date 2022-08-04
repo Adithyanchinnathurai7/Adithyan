@@ -1,6 +1,6 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-
-<<script type="text/javascript">
+<body bgcolor="pink">
+<script type="text/javascript">
 window.alert("please enter valid details..!")
 </script>
 <form:form  action="/shopping/reg" method="post" modelAttribute="obj">
@@ -9,7 +9,7 @@ window.alert("please enter valid details..!")
 		<form:errors style="color :red" type="text" path="username"></form:errors></br>
 		
 		Password:<input type="password" name="password"/><br>	
-		
+		<form:errors style="color :red" type="password" path="password"></form:errors></br>	
 		
 		Re-Enter PassWord:<input type="password" name="password2"/><br>
 		<form:errors style="color :red" type="password" path="password"></form:errors></br>	

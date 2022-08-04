@@ -1,3 +1,4 @@
+<body bgcolor="violet">
 <form    action="/shopping/shops"  method="post"  >
 <input type="hidden" name="shop"  value="ToyShop">
 <input type="checkbox"  name="apple"  value="200">apple
@@ -6,3 +7,4 @@
 <input type="submit">
 
 </form>
+</body>
